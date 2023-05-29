@@ -1,277 +1,488 @@
-@media screen and (max-width: 1440px) {
-    header {
-      height: inherit;
+@media screen and (min-width: 1600px) {
+  header {
+    height: inherit;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    
+    a {
+      font-size: 35px;
     }
-    nav ul li {
-      margin-right: 15px;
+  }
+  
+  nav #logo h1 {
+    font-size: 60px;
+  }
+  
+  #abtMe {
+    h3 {
+      font-size: 30px;
     }
-    nav #logo h1 {
-      font-size: 40px;
-    }
-    #abtMe h1 {
+    
+    h1 {
       font-size: 60px;
     }
-    #abtMe1 {
-      width: 80%;
-      margin: 0px auto;
+  }
+  
+  #abtMe1 {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    
+    > .abtMe2 p {
+      font-size: 50px;
     }
-    #abtMe1 > .abtMe2 p {
-      font-size: 30px;
-    }
-    nav ul li,
-    nav #logo h1,
-    #abtMe h1,
-    #abtMe1,
-    #abtMe1 > .abtMe2 {
-      box-sizing: border-box;
-    }
-    #contact .contact-box{
-      .right{
-        padding: 35px 55px;
+  }
+  
+  #buttonabt {
+    padding-top: 100px;
+  }
+  
+  #services1 {
+    height: 700px;
+    
+    #services {
+      height: 600px;
+      
+      .service {
+        font-size: 25px;
       }
     }
   }
   
-  @media screen and (max-width: 1025px) {
-    header {
-      height: inherit;
+  #projects1 #projects .project h4 {
+    font-size: 30px;
+  }
+  
+  #contact .contact-box {
+    .right {
+      padding: 35px 55px;
     }
-    #abtMe h1 {
-      font-size: 48px;
+    
+    .field {
+      padding: 16px 40px;
+      font-size: 22px;
     }
-    #abtMe1 {
-      flex-wrap: wrap;
-      width: 80%;
-      margin: 0px auto;
+    
+    .button-submit {
+      padding: 16px 40px;
+      font-size: 22px;
     }
-    #abtMe1 > .abtMe2 {
-      width: 40%;
-      margin-right: 0;
+  }
+  
+  .btn1 {
+    font-size: 30px;
+    padding: 20px 70px;
+    border-radius: 35px;
+  }
+  
+  .contact-box {
+    width: 90%;
+    height: 70%;
+    
+    .right {
+      padding: 10px 20px;
+      height: 90%;
+    }
+    
+    h2 {
+      font-size: 40px;
+    }
+  }
+  
+  footer .container .footer-content .footer-section {
+    h3 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    
+    p {
+      font-size: 20px;
       margin-bottom: 20px;
-      padding-top: 10px;
     }
-    #abtMe1 > .abtMe2 p {
+    
+    a {
+      font-size: 22px;
+    }
+  }
+  
+  footer .footer-bottom {
+    padding: 15px 0;
+    
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  header {
+    height: inherit;
+  }
+  
+  #abtMe h1 {
+    font-size: 48px;
+  }
+  
+  #abtMe1 {
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0px auto;
+  }
+  
+  #abtMe1 > .abtMe2 {
+    width: 40%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    
+    p {
       font-size: 24px;
     }
-    .service h1 {
-      font-size: 40px;
-    }
-    .service p {
-      font-size: 12px;
+  }
+  
+  .service h1 {
+    font-size: 40px;
+  }
+  
+  .service p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 482px) and (max-width: 769px) {
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  #abtMe {
+    height: 150px;
+  }
+  
+  #abtMe h1 {
+    font-size: 40px;
+  }
+  
+  #abtMe h3 {
+    font-size: 12px;
+  }
+  
+  #abtMe1 {
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  
+  #abtMe1 > .abtMe2 {
+    width: 40%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+  
+  #abtMe1 > .abtMe2 img {
+    width: 100%;
+  }
+  
+  #abtMe1 > .abtMe2 p {
+    font-size: 18px;
+  }
+  
+  .title h1 {
+    font-size: 40px;
+  }
+  
+  .service p {
+    font-size: 13px;
+  }
+  
+  .service h1 {
+    font-size: 40px;
+  }
+  
+  .service h3 {
+    font-size: 20px;
+  }
+  
+  .service {
+    width: 20%;
+    margin: 0px;
+  }
+  
+  #projects1 #projects {
+    width: 100%;
+    
+    .project {
+      width: 30%;
     }
   }
   
-  @media screen and (min-width: 482px) and (max-width: 769px) {
-    nav ul li {
-      margin-right: 10px;
+  #contact .contact-box .field {
+    width: 80%;
+    padding: 6px 12px;
+  }
+  
+  #contact .contact-box .button-submit {
+    width: 80%;
+  }
+  
+  #contact .contact-box {
+    .right {
+      padding: 15px 35px;
     }
-    #abtMe {
-      height: 150px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  #abtMe {
+    height: auto;
+    padding: 20px 15px;
+  }
+  
+  #abtMe h1 {
+    font-size: 30px;
+  }
+  
+  #abtMe h3 {
+    font-size: 10px;
+  }
+  
+  #abtMe1 {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  
+  #abtMe1 > .abtMe2 {
+    width: 55%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+  
+  #abtMe1 > .abtMe2 img {
+    width: 90%;
+  }
+  
+  #abtMe1 > .abtMe2 p {
+    font-size: 14px;
+  }
+  
+  .title {
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  #services .service {
+    width: 100%;
+    padding: 0px 60px;
+    
+    h1 {
+      font-size: 30px;
     }
-    #abtMe h1 {
-      font-size: 40px;
-    }
-    #abtMe h3 {
-      font-size: 12px;
-    }
-    #abtMe1 {
-      flex-wrap: wrap;
-      margin: 20px auto;
-    }
-    #abtMe1 > .abtMe2 {
-      width: 40%;
-      margin-right: 0;
-      margin-bottom: 10px;
-      padding: 0 5px;
-    }
-    #abtMe1 > .abtMe2 img {
-      width: 100%;
-    }
-    #abtMe1 > .abtMe2 p {
-      font-size: 18px;
-    }
-    .title h1 {
-      font-size: 40px;
-    }
-    .service p {
+    
+    h3 {
       font-size: 13px;
     }
-    .service h1 {
-      font-size: 40px;
+    
+    p {
+      font-size: 13px;
     }
-    .service h3 {
-        font-size: 20px;
+  }
+  
+  #projects1 #titleWhite {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  
+  #projects1 #projects {
+    justify-content: center;
+    height: 100vh;
+    
+    .project {
+      width: 90%;
+      
+      img {
+        width: 80%;
       }
-    .service {
-      width:  20%;
-      margin: 0px;
-    }
-    #projects1 #projects{
-      width: 100%;
-      .project{
-        width: 30%;
-      }
-    }
-    #contact .contact-box .field{
-      width: 80%;
-      padding: 6px 12px;
-    }
-    #contact .contact-box .button-submit{
-      width: 80%;
-    }
-    #contact .contact-box{
-      .right{
-        padding: 15px 35px;
+      
+      h4 {
+        font-size: 14px;
       }
     }
   }
   
-  @media screen and (max-width: 426px) {
-    nav ul li {
-      display: block;
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    #abtMe {
-      height: auto;
-      padding: 20px 15px;
-    }
-    #abtMe h1 {
-      font-size: 30px;
-    }
-    #abtMe h3 {
-      font-size: 10px;
-    }
-    #abtMe1 {
-      width: 100%;
-      flex-wrap: wrap;
-      margin: 20px auto;
-    }
-    #abtMe1 > .abtMe2 {
-      width: 55%;
-      margin-right: 0;
-      margin-bottom: 10px;
-      padding: 0 5px;
-    }
-    #abtMe1 > .abtMe2 img {
-      width: 90%;
-    }
-    #abtMe1 > .abtMe2 p {
-      font-size: 14px;
-    }
-    .title {
-      width: 100%;
-      font-size: 20px;
-    }
-    #services{
-        .service{
-            width: 100%;
-            padding: 0px 60px;
-            h1{
-                font-size: 30px;
-            }
-            h3{
-                font-size: 13px;
-            }
-            p{
-                font-size: 13px;
-            }
-        }
-    }
-    #projects1 #titleWhite{
-      padding-bottom: 20px;
-      padding-top: 20px;
-      font-size: 18px;
-    }
-    #projects1 #projects{
-      justify-content: center;
-      height: 100vh;
-      .project{
-        width: 90%;
-        img{
-          width: 80%;
-        }
-        h4{
-          font-size: 14px;
-        }
-      }
-    }
-    #contact .contact-box{
-      display: block;
-      .right{
-        padding: 35px 55px;
-      }
+  #contact .contact-box {
+    display: block;
+    
+    .right {
+      padding: 35px 55px;
     }
   }
   
-  @media screen and (max-width: 376px) {
-    nav ul li {
-      display: block;
-      margin-right: 0;
-      margin-bottom: 10px;
+  footer .container .footer-content .footer-section {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
     }
-    #abtMe {
-      height: auto;
-      padding: 20px 15px;
+    
+    p {
+      font-size: 10px;
+      margin-bottom: 8px;
     }
-    #abtMe h1 {
-      font-size: 30px;
+    
+    a {
+      font-size: 12px;
     }
-    #abtMe h3 {
+  }
+  
+  footer .footer-bottom {
+    padding: 8px 0;
+    
+    p {
+      font-size: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  #abtMe {
+    height: auto;
+    padding: 20px 15px;
+  }
+  
+  #abtMe h1 {
+    font-size: 30px;
+  }
+  
+  #abtMe h3 {
+    font-size: 10px;
+  }
+  
+  #abtMe1 {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  
+  #abtMe1 > .abtMe2 {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+  
+  #abtMe1 > .abtMe2 img {
+    width: 70%;
+  }
+  
+  #abtMe1 > .abtMe2 p {
+    font-size: 14px;
+  }
+  
+  .title h1 {
+    font-size: 40px;
+  }
+  
+  #wrap {
+    height: inherit;
+  }
+  
+  #projects1 #titleWhite {
+    font-size: 14px;
+  }
+  
+  #projects1 #projects .project {
+    width: 90%;
+  }
+  
+  #contact .contact-box {
+    .right {
+      padding: 15px 30px;
+    }
+  }
+  
+  footer .container .footer-content .footer-section {
+    width: 30%;
+    
+    h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    
+    p {
+      font-size: 9px;
+      margin-bottom: 12px;
+    }
+    
+    a {
       font-size: 10px;
     }
-    #abtMe1 {
-      width: 100%;
-      flex-wrap: wrap;
-      margin: 20px auto;
-    }
-    #abtMe1 > .abtMe2 {
-      width: 80%;
-      margin-right: 0;
-      margin-bottom: 10px;
-      padding: 0 5px;
-    }
-    #abtMe1 > .abtMe2 img {
-      width: 70%;
-    }
-    #abtMe1 > .abtMe2 p {
-      font-size: 14px;
-    }
-    .title h1 {
-      font-size: 40px;
-    }
-    #wrap {
-      height: inherit;
-    }
-    #projects1 #titleWhite {
-      font-size: 14px;
-    }
-    #projects1 #projects .project{
-      width: 90%;
-    }
-    #contact .contact-box{
-      .right{
-        padding: 15px 30px;
-      }
+  }
+  
+  footer .footer-bottom {
+    padding: 8px 0;
+    
+    p {
+      font-size: 8px;
     }
   }
-  @media screen and (max-width: 321px){
-    #projects1 #titleWhite{
-      font-size: 18px;
+}
+
+@media screen and (max-width: 321px) {
+  #projects1 #titleWhite {
+    font-size: 18px;
+  }
+  
+  #abtMe1 > .abtMe2 p {
+    font-size: 12px;
+  }
+  
+  #abtMe1 > .abtMe2 {
+    width: 70%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+  
+  #projects1 #titleWhite {
+    font-size: 12px;
+  }
+  
+  footer .container .footer-content .footer-section {
+    h3 {
+      font-size: 11px;
+      margin-bottom: 8px;
     }
-    #abtMe1 > .abtMe2 p {
-      font-size: 12px;
-    }
-    #abtMe1 > .abtMe2 {
-      width: 70%;
-      margin-right: 0;
+    
+    p {
+      font-size: 9px;
       margin-bottom: 10px;
-      padding: 0 5px;
     }
-    #projects1 #titleWhite {
-      font-size: 12px;
+    
+    a {
+      font-size: 10px;
+    }
+    
+    .social-icons i {
+      font-size: 16px;
     }
   }
+}
+
   
         
   

@@ -1,32 +1,88 @@
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1600px) {
   header {
     height: inherit;
   }
   nav ul li {
-    margin-right: 15px;
+    margin-right: 20px;
+  }
+  nav ul li a {
+    font-size: 35px;
   }
   nav #logo h1 {
-    font-size: 40px;
+    font-size: 60px;
+  }
+  #abtMe h3 {
+    font-size: 30px;
   }
   #abtMe h1 {
     font-size: 60px;
   }
   #abtMe1 {
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
+    margin-top: 20px;
   }
   #abtMe1 > .abtMe2 p {
-    font-size: 30px;
+    font-size: 50px;
   }
-  nav ul li,
-  nav #logo h1,
-  #abtMe h1,
-  #abtMe1,
-  #abtMe1 > .abtMe2 {
-    box-sizing: border-box;
+  #buttonabt {
+    padding-top: 100px;
+  }
+  #services1 {
+    height: 700px;
+  }
+  #services1 #services {
+    height: 600px;
+  }
+  #services1 #services .service {
+    font-size: 25px;
+  }
+  #projects1 #projects .project h4 {
+    font-size: 30px;
   }
   #contact .contact-box .right {
     padding: 35px 55px;
+  }
+  #contact .contact-box .field {
+    padding: 16px 40px;
+    font-size: 22px;
+  }
+  #contact .contact-box .button-submit {
+    padding: 16px 40px;
+    font-size: 22px;
+  }
+  .btn1 {
+    font-size: 30px;
+    padding: 20px 70px;
+    border-radius: 35px;
+  }
+  .contact-box {
+    width: 90%;
+    height: 70%;
+  }
+  .contact-box .right {
+    padding: 10px 20px;
+    height: 90%;
+  }
+  .contact-box h2 {
+    font-size: 40px;
+  }
+  footer .container .footer-content .footer-section h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  footer .container .footer-content .footer-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  footer .container .footer-content .footer-section a {
+    font-size: 22px;
+  }
+  footer .footer-bottom {
+    padding: 15px 0;
+  }
+  footer .footer-bottom p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -193,6 +249,23 @@
   #contact .contact-box .right {
     padding: 35px 55px;
   }
+  footer .container .footer-content .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  footer .container .footer-content .footer-section p {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  footer .container .footer-content .footer-section a {
+    font-size: 12px;
+  }
+  footer .footer-bottom {
+    padding: 8px 0;
+  }
+  footer .footer-bottom p {
+    font-size: 8px;
+  }
 }
 @media screen and (max-width: 376px) {
   nav ul li {
@@ -242,6 +315,26 @@
   #contact .contact-box .right {
     padding: 15px 30px;
   }
+  footer .container .footer-content .footer-section {
+    width: 30%;
+  }
+  footer .container .footer-content .footer-section h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  footer .container .footer-content .footer-section p {
+    font-size: 9px;
+    margin-bottom: 12px;
+  }
+  footer .container .footer-content .footer-section a {
+    font-size: 10px;
+  }
+  footer .footer-bottom {
+    padding: 8px 0;
+  }
+  footer .footer-bottom p {
+    font-size: 8px;
+  }
 }
 @media screen and (max-width: 321px) {
   #projects1 #titleWhite {
@@ -258,5 +351,19 @@
   }
   #projects1 #titleWhite {
     font-size: 12px;
+  }
+  footer .container .footer-content .footer-section h3 {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+  footer .container .footer-content .footer-section p {
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+  footer .container .footer-content .footer-section a {
+    font-size: 10px;
+  }
+  footer .container .footer-content .footer-section .social-icons i {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=responsive.css.map */
