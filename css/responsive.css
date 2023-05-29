@@ -249,6 +249,9 @@
   #contact .contact-box .right {
     padding: 35px 55px;
   }
+  footer .container .footer-content .footer-section {
+    width: 30%;
+  }
   footer .container .footer-content .footer-section h3 {
     font-size: 18px;
     margin-bottom: 8px;
@@ -259,6 +262,9 @@
   }
   footer .container .footer-content .footer-section a {
     font-size: 12px;
+  }
+  footer .container .footer-content .footer-section .social-icons i {
+    font-size: 14px;
   }
   footer .footer-bottom {
     padding: 8px 0;
@@ -329,6 +335,9 @@
   footer .container .footer-content .footer-section a {
     font-size: 10px;
   }
+  footer .container .footer-content .footer-section .social-icons ul li a i {
+    font-size: 14px;
+  }
   footer .footer-bottom {
     padding: 8px 0;
   }
@@ -364,6 +373,6 @@
     font-size: 10px;
   }
   footer .container .footer-content .footer-section .social-icons i {
-    font-size: 16px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=responsive.css.map */

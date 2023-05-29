@@ -328,6 +328,7 @@
   }
   
   footer .container .footer-content .footer-section {
+    width: 30%;
     h3 {
       font-size: 18px;
       margin-bottom: 8px;
@@ -342,7 +343,9 @@
       font-size: 12px;
     }
   }
-  
+  footer .container .footer-content .footer-section .social-icons i{
+    font-size: 14px;
+  }
   footer .footer-bottom {
     padding: 8px 0;
     
@@ -431,6 +434,9 @@
     a {
       font-size: 10px;
     }
+    .social-icons ul li a i{
+      font-size: 14px;
+    }
   }
   
   footer .footer-bottom {
@@ -478,11 +484,7 @@
     }
     
     .social-icons i {
-      font-size: 16px;
+      font-size: 12px;
     }
   }
 }
-
-  
-        
-  
