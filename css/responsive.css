@@ -1,99 +1,4 @@
-@media screen and (min-width: 1599px) {
-  header {
-    height: inherit;
-  }
-  nav ul li {
-    margin-right: 20px;
-  }
-  nav ul li a {
-    font-size: 35px;
-  }
-  nav #logo h1 {
-    font-size: 60px;
-  }
-  #abtMe {
-    height: inherit;
-  }
-  #abtMe h3 {
-    font-size: 30px;
-  }
-  #abtMe h1 {
-    font-size: 60px;
-  }
-  #abtMe1 {
-    width: 90%;
-    margin: 0px auto;
-    margin-top: 20px;
-  }
-  #abtMe1 > .abtMe2 p {
-    font-size: 50px;
-  }
-  #buttonabt {
-    padding-top: 100px;
-  }
-  #services1 {
-    height: 700px;
-  }
-  #services1 #services {
-    height: 600px;
-  }
-  #services1 #services .service {
-    font-size: 25px;
-  }
-  #services1 #services .service h1 {
-    font-size: 70px;
-  }
-  #projects1 #projects .project h4 {
-    font-size: 30px;
-  }
-  #contact .contact-box .right {
-    padding: 35px 55px;
-  }
-  #contact .contact-box .field {
-    padding: 16px 40px;
-    font-size: 22px;
-  }
-  #contact .contact-box .button-submit {
-    padding: 16px 40px;
-    font-size: 22px;
-  }
-  .btn1 {
-    font-size: 30px;
-    padding: 20px 70px;
-    border-radius: 35px;
-  }
-  .contact-box {
-    width: 90%;
-    height: 70%;
-  }
-  .contact-box .right {
-    padding: 10px 20px;
-    height: 90%;
-  }
-  .contact-box h2 {
-    font-size: 40px;
-  }
-  footer .container .footer-content .footer-section h3 {
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
-  footer .container .footer-content .footer-section p {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  footer .container .footer-content .footer-section a {
-    font-size: 22px;
-  }
-  footer .footer-bottom {
-    padding: 15px 0;
-    position: absolute;
-    bottom: 0;
-  }
-  footer .footer-bottom p {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1439px) {
+@media screen and (max-width: 1441px) {
   header {
     height: inherit;
   }
@@ -123,18 +28,12 @@
   .service p {
     font-size: 20px;
   }
-  footer .footer-bottom {
-    position: absolute;
-    bottom: 0;
-  }
-}
-@media screen and (min-width: 1023px) {
-  footer .footer-bottom {
-    position: absolute;
-    bottom: 0;
-  }
   #services .service {
     width: 29%;
+  }
+  footer .footer-bottom {
+    position: absolute;
+    bottom: 0;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -165,7 +64,7 @@
     font-size: 20px;
   }
 }
-@media screen and (min-width: 482px) and (max-width: 769px) {
+@media screen and (max-width: 769px) {
   nav ul li {
     margin-right: 10px;
   }
@@ -206,7 +105,7 @@
   .service h3 {
     font-size: 20px;
   }
-  .service {
+  #services .service {
     width: 25%;
     margin: 0px;
   }
@@ -253,13 +152,16 @@
     margin: 0px auto;
   }
   #abtMe1 > .abtMe2 {
-    width: 45%;
+    width: 60%;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 0 5px;
   }
+  #abtMe1 > .abtMe2:last-child {
+    padding: 0 10px 0 10px;
+  }
   #abtMe1 > .abtMe2 img {
-    width: 90%;
+    width: 65%;
   }
   #abtMe1 > .abtMe2 p {
     font-size: 14px;
@@ -310,18 +212,22 @@
   #contact .contact-box .right {
     padding: 35px 55px;
   }
-  footer .container .footer-content .footer-section {
-    width: 30%;
+  .footer-content {
+    flex-direction: column;
   }
-  footer .container .footer-content .footer-section h3 {
+  .footer-content .footer-section {
+    width: 30%;
+    padding-top: 20px;
+  }
+  .footer-content .footer-section h3 {
     font-size: 18px;
     margin-bottom: 8px;
   }
-  footer .container .footer-content .footer-section p {
+  .footer-content .footer-section p {
     font-size: 10px;
     margin-bottom: 8px;
   }
-  footer .container .footer-content .footer-section a {
+  .footer-content .footer-section a {
     font-size: 12px;
   }
   footer .container .footer-content .footer-section .social-icons i {
@@ -329,6 +235,7 @@
   }
   footer .footer-bottom {
     padding: 8px 0;
+    position: relative;
   }
   footer .footer-bottom p {
     font-size: 8px;
@@ -356,7 +263,7 @@
     margin: 0px auto;
   }
   #abtMe1 > .abtMe2 {
-    width: 80%;
+    width: 70%;
     margin-right: 0;
     margin-bottom: 10px;
     padding: 0 5px;
@@ -366,12 +273,13 @@
   }
   #abtMe1 > .abtMe2 p {
     font-size: 14px;
+    padding: 0px 10px 0px 10px;
   }
   #buttonabt {
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 5px 0px;
   }
-  .btnCenter {
-    padding-bottom: 40px;
+  .btn1 {
+    padding: 10px 32px;
   }
   .title h1 {
     font-size: 40px;
@@ -388,8 +296,12 @@
   #contact .contact-box .right {
     padding: 15px 30px;
   }
+  footer .container .footer-content {
+    flex-direction: column;
+  }
   footer .container .footer-content .footer-section {
     width: 100%;
+    padding-top: 5px;
   }
   footer .container .footer-content .footer-section h3 {
     font-size: 15px;
@@ -407,6 +319,8 @@
   }
   footer .footer-bottom {
     padding: 8px 0;
+    position: relative;
+    bottom: 0;
   }
   footer .footer-bottom p {
     font-size: 8px;
