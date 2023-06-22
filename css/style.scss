@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
@@ -9,9 +9,52 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+}
+
+// Mixins
+@mixin link-styles($color) {
+  color: $color;
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover:before {
+    transform: scaleX(1);
+  }
+}
+
+@mixin button-styles {
+  display: inline-block;
+  padding: 13px 42px;
+  background-color: $main-color;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  a {
+    color: #fff;
+  }
 }
 
 // Variables
@@ -21,6 +64,8 @@ $pink-dark: #B04759;
 $purple-color: #B799FF;
 $purple-dark: #A459D1;
 $gray-color: #7F8487;
+$button-color: #AEE2FF;
+$button-hover-color: darken($main-color, 20%);
 
 // Styles
 header {
@@ -63,26 +108,7 @@ nav {
     }
 
     a {
-      color: $main-color;
-      text-decoration: none;
-      position: relative;
-      font-size: 20px;
-
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: $main-color;
-        transform: scaleX(0);
-        transition: transform 0.3s ease-in-out;
-      }
-
-      &:hover:before {
-        transform: scaleX(1);
-      }
+      @include link-styles($main-color);
     }
   }
 
@@ -101,22 +127,24 @@ nav {
 #abtMe {
   color: $pink-color;
   text-align: center;
-  height: 100%;
-  margin-bottom: 20px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   h1 {
     font-weight: bold;
     color: $main-color;
-    padding-top: 20px;
     font-size: 70px;
   }
 
   h3 {
     color: $pink-dark;
     font-weight: lighter;
+    padding-bottom: 10px;
   }
 }
-
 #abtMe1 {
   display: flex;
   justify-content: space-around;
@@ -146,63 +174,55 @@ nav {
     }
   }
 }
-
-$button-color: #AEE2FF;
-$button-hover-color: darken($main-color, 20%);
-
 .btn1 {
-  display: inline-block;
-  padding: 13px 42px;
-  background-color: $main-color;
-  color: white;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-  border: none;
-  margin: 10px 0px;
-
-  &:hover {
-    background-color: $button-hover-color;
-  }
-
-  a {
-    color: #fff;
-  }
+  @include button-styles;
+}
+#buttonabt{
+  padding: 20px 0px;
 }
 
 .title {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
+  padding-top: 40px;
   color: #fff;
   background-color: $pink-dark;
   padding-top: 40px;
   font-size: 24px;
 }
-
 #services {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: $pink-dark;
+  padding: 20px;
 
   .service {
-    width: 25%;
+    width: 20%;
     text-align: center;
     margin: 20px;
     border-radius: 20px;
-    color: #fff;
     transition: all 0.3s ease-in-out;
 
     &:hover {
       transform: scale(1.1);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
+    p{
+      color: #fff ;
+    }
+    i{
+      color: #fff;
+    }
+    h3{
+      text-decoration: underline;
+      padding: 5px 0px;
+    }
   }
 }
 
 #projects1 {
-  height: 100vh;
+  height: inherit;
 
   #titleWhite {
     width: 100%;
@@ -210,7 +230,7 @@ $button-hover-color: darken($main-color, 20%);
     color: $pink-dark;
     padding-top: 40px;
     font-size: 24px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
 
   #projects {
@@ -219,7 +239,7 @@ $button-hover-color: darken($main-color, 20%);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 50%;
 
     .project {
       width: 30%;
@@ -228,7 +248,7 @@ $button-hover-color: darken($main-color, 20%);
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
 
       img {
@@ -256,13 +276,12 @@ $button-hover-color: darken($main-color, 20%);
 #contact {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
-  background-color: $purple-color;
-  margin-top: 40px;
+  background-color: $pink-dark;
   padding: 100px 0px;
 
   .contact-box {
@@ -287,7 +306,7 @@ $button-hover-color: darken($main-color, 20%);
     }
 
     .contact-h2 {
-      color: $purple-dark;
+      color: $pink-dark;
       position: relative;
       padding: 0 0 10px;
       margin-bottom: 10px;
@@ -301,7 +320,7 @@ $button-hover-color: darken($main-color, 20%);
         height: 4px;
         width: 50px;
         border-radius: 2px;
-        background-color: $purple-dark;
+        background-color: $pink-dark;
       }
     }
 
@@ -317,7 +336,7 @@ $button-hover-color: darken($main-color, 20%);
       transition: .3s;
 
       &:focus {
-        border-color: $purple-color;
+        border-color: $pink-color;
       }
     }
 
@@ -325,7 +344,7 @@ $button-hover-color: darken($main-color, 20%);
       color: #000;
       width: 100%;
       padding: 8px 16px;
-      background-color: $purple-dark;
+      background-color: $pink-dark;
       color: #fff;
       font-size: 17px;
       border: none;
@@ -333,7 +352,7 @@ $button-hover-color: darken($main-color, 20%);
       cursor: pointer;
 
       &:hover {
-        background-color: $purple-color;
+        background-color: $pink-dark;
         transition: 0.3s;
       }
     }
@@ -349,7 +368,7 @@ $button-hover-color: darken($main-color, 20%);
 // Footer styles
 footer {
   background-color: white;
-  color: $purple-dark;
+  color: $pink-dark;
   padding: 40px 0;
   height: 45vh;
   position: relative;
@@ -394,12 +413,12 @@ footer {
         margin-bottom: 10px;
 
         a {
-          color: $purple-color;
+          color: $pink-color;
           text-decoration: none;
           font-size: 14px;
 
           &:hover {
-            color: $purple-dark;
+            color: $pink-dark;
           }
         }
       }
@@ -415,7 +434,7 @@ footer {
         }
 
         a {
-          color: $purple-dark;
+          color: $main-color;
           text-decoration: none;
 
           i {
@@ -423,7 +442,7 @@ footer {
           }
 
           &:hover {
-            color: $purple-dark;
+            color: $main-color;
           }
         }
       }
@@ -431,11 +450,9 @@ footer {
   }
 
   .footer-bottom {
-    background-color: $purple-dark;
+    background-color: $pink-dark;
     padding: 10px 0;
     text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 
     p {
@@ -445,19 +462,23 @@ footer {
     }
   }
 }
+#services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: $pink-dark;
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  .service {
+    width: 25%;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
 
-  
-
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

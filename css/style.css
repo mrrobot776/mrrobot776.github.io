@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
@@ -9,8 +9,8 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -84,18 +84,21 @@ nav #logo h1 {
 #abtMe {
   color: #F99B7D;
   text-align: center;
-  height: 100%;
-  margin-bottom: 20px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #abtMe h1 {
   font-weight: bold;
   color: #E76161;
-  padding-top: 20px;
   font-size: 70px;
 }
 #abtMe h3 {
   color: #B04759;
   font-weight: lighter;
+  padding-bottom: 10px;
 }
 
 #abtMe1 {
@@ -133,7 +136,6 @@ nav #logo h1 {
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
   border: none;
-  margin: 10px 0px;
 }
 .btn1:hover {
   background-color: #c41e1e;
@@ -142,10 +144,14 @@ nav #logo h1 {
   color: #fff;
 }
 
+#buttonabt {
+  padding: 20px 0px;
+}
+
 .title {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
+  padding-top: 40px;
   color: #fff;
   background-color: #B04759;
   padding-top: 40px;
@@ -157,22 +163,32 @@ nav #logo h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #B04759;
+  padding: 20px;
 }
 #services .service {
-  width: 25%;
+  width: 20%;
   text-align: center;
   margin: 20px;
   border-radius: 20px;
-  color: #fff;
   transition: all 0.3s ease-in-out;
 }
 #services .service:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+#services .service p {
+  color: #fff;
+}
+#services .service i {
+  color: #fff;
+}
+#services .service h3 {
+  text-decoration: underline;
+  padding: 5px 0px;
+}
 
 #projects1 {
-  height: 100vh;
+  height: inherit;
 }
 #projects1 #titleWhite {
   width: 100%;
@@ -180,7 +196,7 @@ nav #logo h1 {
   color: #B04759;
   padding-top: 40px;
   font-size: 24px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 #projects1 #projects {
   width: 90%;
@@ -188,7 +204,7 @@ nav #logo h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 50vh;
+  height: 50%;
 }
 #projects1 #projects .project {
   width: 30%;
@@ -197,7 +213,7 @@ nav #logo h1 {
   transition: all 0.3s ease-in-out;
 }
 #projects1 #projects .project:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 #projects1 #projects .project img {
   width: 100%;
@@ -218,13 +234,12 @@ nav #logo h1 {
 #contact {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
-  background-color: #B799FF;
-  margin-top: 40px;
+  background-color: #B04759;
   padding: 100px 0px;
 }
 #contact .contact-box {
@@ -247,7 +262,7 @@ nav #logo h1 {
   padding: 25px 40px;
 }
 #contact .contact-box .contact-h2 {
-  color: #A459D1;
+  color: #B04759;
   position: relative;
   padding: 0 0 10px;
   margin-bottom: 10px;
@@ -261,7 +276,7 @@ nav #logo h1 {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: #A459D1;
+  background-color: #B04759;
 }
 #contact .contact-box .field {
   color: #000;
@@ -275,13 +290,13 @@ nav #logo h1 {
   transition: 0.3s;
 }
 #contact .contact-box .field:focus {
-  border-color: #B799FF;
+  border-color: #F99B7D;
 }
 #contact .contact-box .button-submit {
   color: #000;
   width: 100%;
   padding: 8px 16px;
-  background-color: #A459D1;
+  background-color: #B04759;
   color: #fff;
   font-size: 17px;
   border: none;
@@ -289,7 +304,7 @@ nav #logo h1 {
   cursor: pointer;
 }
 #contact .contact-box .button-submit:hover {
-  background-color: #B799FF;
+  background-color: #B04759;
   transition: 0.3s;
 }
 #contact .footer-content h3 {
@@ -298,7 +313,7 @@ nav #logo h1 {
 
 footer {
   background-color: white;
-  color: #A459D1;
+  color: #B04759;
   padding: 40px 0;
   height: 45vh;
   position: relative;
@@ -339,12 +354,12 @@ footer .footer-section ul li {
   margin-bottom: 10px;
 }
 footer .footer-section ul li a {
-  color: #B799FF;
+  color: #F99B7D;
   text-decoration: none;
   font-size: 14px;
 }
 footer .footer-section ul li a:hover {
-  color: #A459D1;
+  color: #B04759;
 }
 footer .footer-section .social-icons {
   display: flex;
@@ -356,25 +371,42 @@ footer .footer-section .social-icons li .pink {
   color: #B04759;
 }
 footer .footer-section .social-icons li a {
-  color: #A459D1;
+  color: #E76161;
   text-decoration: none;
 }
 footer .footer-section .social-icons li a i {
   font-size: 24px;
 }
 footer .footer-section .social-icons li a:hover {
-  color: #A459D1;
+  color: #E76161;
 }
 footer .footer-bottom {
-  background-color: #A459D1;
+  background-color: #B04759;
   padding: 10px 0;
   text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 footer .footer-bottom p {
   font-size: 12px;
   margin: 0;
   color: white;
+}
+
+#services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #B04759;
+}
+#services .service {
+  width: 25%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#services .service:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=style.css.map */
