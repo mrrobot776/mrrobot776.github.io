@@ -359,8 +359,14 @@
   }
   
   #contact .contact-box {
+    .contact-h2{
+      font-size: 18px;
+    }
     .right {
       padding: 15px 30px;
+    }
+    .field{
+      font-size: 14px;
     }
   }
   
@@ -397,7 +403,7 @@
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 322px) {
   #projects1 #titleWhite {
     font-size: 18px;
   }

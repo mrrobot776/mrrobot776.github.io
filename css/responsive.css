@@ -293,8 +293,14 @@
   #projects1 #projects .project {
     width: 90%;
   }
+  #contact .contact-box .contact-h2 {
+    font-size: 18px;
+  }
   #contact .contact-box .right {
     padding: 15px 30px;
+  }
+  #contact .contact-box .field {
+    font-size: 14px;
   }
   footer .container .footer-content {
     flex-direction: column;
@@ -326,7 +332,7 @@
     font-size: 8px;
   }
 }
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 322px) {
   #projects1 #titleWhite {
     font-size: 18px;
   }
