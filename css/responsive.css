@@ -178,6 +178,7 @@
   }
   #services .service {
     width: 100%;
+    padding-bottom: 40px;
   }
   #services .service h1 {
     font-size: 30px;
@@ -220,15 +221,15 @@
     padding-top: 20px;
   }
   .footer-content .footer-section h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 8px;
   }
   .footer-content .footer-section p {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 8px;
   }
   .footer-content .footer-section a {
-    font-size: 12px;
+    font-size: 14px;
   }
   footer .container .footer-content .footer-section .social-icons i {
     font-size: 14px;
@@ -314,11 +315,11 @@
     margin-bottom: 8px;
   }
   footer .container .footer-content .footer-section p {
-    font-size: 9px;
+    font-size: 11px;
     margin-bottom: 12px;
   }
   footer .container .footer-content .footer-section a {
-    font-size: 10px;
+    font-size: 12px;
   }
   footer .container .footer-content .footer-section .social-icons ul li a i {
     font-size: 14px;
@@ -355,20 +356,6 @@
     padding-bottom: 40px;
   }
   #projects1 #titleWhite {
-    font-size: 12px;
-  }
-  footer .container .footer-content .footer-section h3 {
-    font-size: 11px;
-    margin-bottom: 8px;
-  }
-  footer .container .footer-content .footer-section p {
-    font-size: 9px;
-    margin-bottom: 10px;
-  }
-  footer .container .footer-content .footer-section a {
-    font-size: 10px;
-  }
-  footer .container .footer-content .footer-section .social-icons i {
     font-size: 12px;
   }
 }/*# sourceMappingURL=responsive.css.map */
