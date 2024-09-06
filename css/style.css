@@ -1,1 +1,7 @@
 @media (min-width:768px){.news-input{width:50%}}
+.background-section {
+    background-image: url('images/dark.avif');
+    background-size: cover;
+    background-position: center;
+  }
+  
